@@ -4,8 +4,8 @@ class Conference:
         self.__participants_amount = participants_amount
         self.__ticket_price = ticket_price
         self.__venue = venue
-        self.public_number = 2024
-        self.public_string = "Public"
+        self.year = 2024
+        self.type_of_event = "Public"
 
     def get_name(self):
         return self.__name
@@ -24,13 +24,13 @@ class Conference:
                 f"Participants amount: {self.__participants_amount}, "
                 f"Ticket price: {self.__ticket_price}, "
                 f"Venue: {self.__venue}, "
-                f"Public Number: {self.public_number}, "
-                f"Public String: {self.public_string}")
+                f"Public Number: {self.year}, "
+                f"Public String: {self.type_of_event}")
 
     def __repr__(self):
         return (f"Conference({self.__name}, {self.__participants_amount}, "
                 f"{self.__ticket_price}, {self.__venue}, "
-                f"{self.public_number}, {self.public_string})")
+                f"{self.year}, {self.type_of_event}")
 
     def __del__(self):
         """Destructor that is called when the object is about to be destroyed."""
